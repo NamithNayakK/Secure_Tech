@@ -1,0 +1,41 @@
+﻿import type { Project } from "../types";
+
+export const PROJECTS: Project[] = [
+  {
+    id: "1",
+    title: "PhishGuard — Email Phishing Detector",
+    slug: "phishguard",
+    description: "A lightweight browser extension that analyses email headers and body text for phishing indicators using heuristic rules and a small ML classifier.",
+    longDescription: "PhishGuard extracts features including sender domain reputation, link mismatch ratios, urgency keywords and header anomalies. The classifier was trained on a balanced public dataset. This project is a student research exercise and is not a production security tool.",
+    category: "Blue Team",
+    tags: ["Python", "ML", "Browser Extension", "Phishing Detection"],
+    contributors: [],
+    status: "completed",
+    featured: true,
+    isSample: true,
+  },
+  {
+    id: "2",
+    title: "NetTrace — Packet Analysis Dashboard",
+    slug: "nettrace",
+    description: "A local-only dashboard that wraps Wireshark/tshark output, visualises protocol distribution and flags suspicious traffic patterns in PCAP files.",
+    category: "Network Security",
+    tags: ["Python", "React", "Wireshark", "Network Analysis"],
+    contributors: [],
+    status: "active",
+    featured: true,
+    isSample: true,
+  },
+  {
+    id: "3",
+    title: "ForensicKit — CTF Automation Toolkit",
+    slug: "forensickit",
+    description: "A CLI collection of automation scripts for common digital forensics CTF tasks: metadata extraction, steganography detection and log parsing.",
+    category: "Digital Forensics",
+    tags: ["Bash", "Python", "CLI", "CTF"],
+    contributors: [],
+    status: "completed",
+    featured: false,
+    isSample: true,
+  },
+];
